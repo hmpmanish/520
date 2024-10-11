@@ -3,51 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Pandey Traders</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background: url('images/header-bg.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 60px 0;
+        }
+        .testimonial {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-left: 5px solid #28a745;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Pandey Traders (Sukhdev Pandey Khad Beej Bhandar)</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="text-center">
+        <h1>Pandey Traders</h1>
+        <p>Your Trusted Source for Agricultural Supplies</p>
     </header>
 
-    <main>
-        <section id="home">
-            <h2>Welcome to Pandey Traders</h2>
-            <p>Your one-stop shop for quality seeds and fertilizers.</p>
-        </section>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">Pandey Traders</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
 
+    <main class="container my-5">
         <section id="about">
             <h2>About Us</h2>
-            <p>Pandey Traders has been serving the agricultural community for over 10 years, providing the best quality seeds and agricultural products.</p>
+            <img src="images/about_us.jpg" alt="About Pandey Traders" class="img-fluid">
+            <p>Pandey Traders, established in 2002, is a family-owned business providing a wide range of agricultural products and services. Our mission is to support local farmers with high-quality products and expert solutions.</p>
+        </section>
+
+        <section id="products">
+            <h2>Products</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Agricultural Seeds</h4>
+                    <img src="images/seeds.jpg" alt="Agricultural Seeds" class="img-fluid">
+                    <p>High-quality seeds for various crops.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Fertilizers</h4>
+                    <img src="images/fertilizers.jpg" alt="Fertilizers" class="img-fluid">
+                    <p>Nutrient-rich fertilizers to enhance soil quality.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Machinery</h4>
+                    <img src="images/machinery.jpg" alt="Machinery" class="img-fluid">
+                    <p>Reliable machinery for effective farming.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>Customer Testimonials</h2>
+            <div class="testimonial">
+                <p>"Excellent service and quality products!"</p>
+                <footer class="blockquote-footer">A satisfied customer</footer>
+            </div>
+            <div class="testimonial">
+                <p>"A reliable source for all my farming needs!"</p>
+                <footer class="blockquote-footer">Another happy customer</footer>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="row gallery">
+                <div class="col-md-4">
+                    <img src="images/gallery1.jpg" alt="Gallery Image 1">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/gallery2.jpg" alt="Gallery Image 2">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/gallery3.jpg" alt="Gallery Image 3">
+                </div>
+            </div>
         </section>
 
         <section id="contact">
             <h2>Contact Us</h2>
-            <form id="contactForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send Message</button>
+            <p><strong>Address:</strong> Sukhdev Pandey Beej Bhandar, Itia Thok, Gonda, Uttar Pradesh 271202</p>
+            <p><strong>Contact Numbers:</strong> 7703079301, 9450526896</p>
+            <p><strong>Email:</strong> <a href="mailto:pandeytraders.itiyathok@gmail.com">pandeytraders.itiyathok@gmail.com</a></p>
+            <h3>Business Hours</h3>
+            <ul>
+                <li>Friday: 7 am – 9:30 pm</li>
+                <li>Saturday: 7 am – 10 pm</li>
+                <li>Sunday: 7 am – 10 pm</li>
+                <li>Monday: 7 am – 8 pm</li>
+                <li>Tuesday: 7 am – 9:30 pm</li>
+                <li>Wednesday: 7 am – 10 pm</li>
+                <li>Thursday: 7 am – 9:30 pm</li>
+            </ul>
+
+            <h3>Get in Touch</h3>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Send Message</button>
             </form>
-            <div id="formResponse"></div>
         </section>
     </main>
 
-    <footer>
+    <footer class="text-center bg-light py-3">
         <p>&copy; 2024 Pandey Traders. All rights reserved.</p>
+        <p><a href="https://www.facebook.com/sukhdevpandeybeejbhandar/" target="_blank">Facebook</a> | <a href="https://www.instagram.com/pandeytraders.itiathok" target="_blank">Instagram</a></p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
